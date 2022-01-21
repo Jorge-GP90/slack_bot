@@ -8,9 +8,7 @@ module Clockwork
   
   handler do |job|
   
-    sample = SlackNotify::Client.new(
-      webhook_url: 'https://hooks.slack.com/services/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'
-      )
+   
     
     bot = sample.notify("Hello there!", "#general")
     bot_one = sample.notify(":)", "#general")
